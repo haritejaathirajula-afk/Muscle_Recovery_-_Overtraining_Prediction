@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <title>Muscle Recovery Prediction</title>
+</head>
+<body style="text-align:center; font-family:Arial; margin-top:50px;">
 
-<h1>Muscle Recovery Prediction</h1>
+    <h1>💪 Muscle Recovery Prediction</h1>
 
-<form action="/predict" method="post">
-    <input type="number" name="load" placeholder="Training Load" required><br><br>
-    <input type="number" name="sleep" placeholder="Sleep Hours" required><br><br>
-    <input type="number" name="stress" placeholder="Stress Level" required><br><br>
+    <form action="/predict" method="post">
+        <input type="number" name="load" placeholder="Training Load" required><br><br>
+        <input type="number" name="sleep" placeholder="Sleep Hours" required><br><br>
+        <input type="number" name="stress" placeholder="Stress Level" required><br><br>
 
-    <button type="submit">Predict</button>
-</form>
+        <button type="submit">Predict</button>
+    </form>
 
-<h2>{{ prediction }}</h2>
+    <h2>{{ prediction }}</h2>
 
 </body>
 </html>
