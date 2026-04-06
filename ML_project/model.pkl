@@ -1,0 +1,6 @@
+import joblib
+
+# Save the trained Random Forest model
+joblib.dump(rf, "model.pkl")
+
+print("Model saved as model.pkl")
