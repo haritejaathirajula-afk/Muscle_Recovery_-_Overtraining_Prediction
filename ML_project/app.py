@@ -10,7 +10,7 @@ model = joblib.load("model.pkl")
 def home():
     return render_template("index.html")
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])   # ✅ NO dot here
 def predict():
     # Get values from form
     load = float(request.form['load'])
